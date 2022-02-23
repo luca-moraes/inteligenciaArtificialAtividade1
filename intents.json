@@ -1,0 +1,18 @@
+{"intents":[
+  { "tag": "saudacao",
+    "patterns":["Ola","Opa","Oi"],
+    "responses": ["oi","como vai"],
+    "context": [""]
+  },
+  { "tag": "despedida",
+    "patterns":["valeu","tchau","Obrigado","tks"],
+    "responses": ["ate breve","falou"],
+    "context": [""]
+  },
+  { "tag": "data_prova",
+    "patterns":["Quando sera a prova?","A prova será em que dia?"],
+    "responses": ["no dia 25"],
+    "context": [""]
+  }
+]
+}
