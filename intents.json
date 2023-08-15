@@ -10,6 +10,11 @@
   { "tag": "data_prova",
     "patterns":["Quando sera a prova?","A prova será em que dia?"],
     "responses": ["no dia 26"]
+  },
+  {
+    "tag": "pipe",
+    "patterns": ["o que é pipe", "como fazer um pipe", "onde mandar o pipe"],
+    "responses": ["para saber mais sobre o pipe, entre no link: www.pipe.com"]
   }
 ]
 }
