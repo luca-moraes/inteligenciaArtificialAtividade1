@@ -4,7 +4,7 @@
     "responses": ["Oi","Olá"]
   },
   { "tag": "despedida",
-    "patterns":["valeu","tchau","Obrigado","tks"],
+    "patterns":["valeu","tchau","Obrigado, até mais","tks", "adeus"],
     "responses": ["Até breve","Falou"]
   },
   { "tag": "data_prova",
@@ -12,14 +12,95 @@
     "responses": ["no dia 26"]
   },
   {
-    "tag": "pipe",
-    "patterns": ["o que é pipe", "o q é pipe", "me diga algo sobre o pipe", "me fale mais sobre pipe", "o que são projetos pipe", "sobre o pipe"],
-    "responses": ["O PIPE-FAPESP é um porjeto que apoia a execução de pesquisa científica e/ou tecnológica em micro, pequenas e médias empresas no Estado de São Paulo. A sigla PIPE significa pesquisa inovativa em pequenas empresas. Para saber mais sobre o pipe, entre no link: https://fapesp.br/pipe/"]
+    "tag": "sobrePipe",
+    "patterns": ["o que sabe sobre pipe", "o q sabes sobre pipe", "me diga algo sobre o pipe", "me fale mais sobre pipe", "o que sabe sobre os projetos pipe", "sobre o pipe"],
+    "responses": ["O PIPE-FAPESP é um projeto que apoia a execução de pesquisa científica e/ou tecnológica em micro, pequenas e médias empresas no Estado de São Paulo. A sigla PIPE significa pesquisa inovativa em pequenas empresas. Para saber mais sobre o pipe, entre no link: https://fapesp.br/pipe/"]
   },
   {
     "tag": "objetivosPipe",
     "patterns": ["quais sao os objetivos do pipe", "me fala sobre os objetivos do pipe", "objetivos do pipe", "diga os objetivos do pipe"],
     "responses" : ["São objetivos do PIPE: \n1. Apoiar a pesquisa em ciência e tecnologia como instrumento para promover a inovação tecnológica, promover o desenvolvimento empresarial e aumentar a competitividade das pequenas empresas.\n2. Incrementar a contribuição da pesquisa para o desenvolvimento econômico e social.\n3. Induzir o aumento do investimento privado em pesquisa tecnológica.\n4. Possibilitar que as empresas se associem a pesquisadores do ambiente acadêmico em projetos de pesquisa visando à inovação tecnológica.\n5. Contribuir para a formação e o desenvolvimento de núcleos de desenvolvimento tecnológico nas empresas e para o emprego de pesquisadores no mercado.\n Saiba mais no link a seguir: https://fapesp.br/pipe/sobre/"]
-  }
+  },
+  {
+    "tag": "submissaoPipe",
+    "patterns": ["quando posso submeter um pipe", "qual a data de submissao de um pipe", "quando posso enviar um pipe", "qual a data de envio para um pipe", "quando fazer o envio de um pipe"],
+    "responses": ["As propostas para o PIPE Fase 1, Fase 2 e PIPE Invest são recebidas em fluxo contínuo durante todo o ano.\nA submissão de propostas ao PIPE pode ser feita a qualquer momento do ano pelo SAGe (sistema de apoio a gestão da fapesp) no link a seguir: https://sage.fapesp.br/SAGe_WEB/jsp/loginAdm.jsp"]
+  },
+  {
+    "tag":"o_que_e_o_pipe",
+    "patterns":["o que é pipe", "oq é pipe", "o q é o pipe", "me diga o que é um pipe", "O que é o Programa PIPE?"],
+    "responses":["O Programa Pesquisa Inovativa em Pequenas Empresas da FAPESP destina-se a apoiar a execução de pesquisa científica e tecnológica em pequenas empresas no Estado de São Paulo. Seus objetivos são apoiar a pesquisa em ciência e tecnologia como instrumento para promover a inovação tecnológica e o desenvolvimento empresarial, aumentar a competitividade das pequenas empresas, possibilitar que as empresas se associem a pesquisadores do ambiente acadêmico em projetos de pesquisa visando à inovação tecnológica e contribuir para a formação e o desenvolvimento de núcleos de desenvolvimento tecnológico nas empresas e para o emprego de pesquisadores no mercado de trabalho empresarial criando uma cultura permanente de inovação."]
+  },
+  {
+    "tag":"diferente_etapas_programa_pipe",
+    "patterns":["Há diferentes etapas no pipe", "quais são as diferentes etapas do pipe?", "me diga mais sobre as etapas do pipe", "me explique um pouco sobre as etapas do pipe", "quais sao as etapas do pipe"],
+    "responses":["a) Fase 1: é destinada à verificação da viabilidade técnico-científica da proposta, (duração de até 9 meses e orçamento de até R$ 300.000, mais Reserva Técnica e Benefícios Complementares);\nb) Fase 2: destina-se à execução da pesquisa propriamente dita (duração de até 24 meses e orçamento de até R$ 1.500.000, mais Reserva Técnica e Benefícios Complementares);\nc) PIPE Invest: Aceleração da chegada ao mercado de Projetos da Fase 2, quando houver terceira parte interessada (duração de até 24 meses e orçamento de até R$ 1.500.000); e\nd) Fase 3: desenvolvimento comercial e industrial dos produtos, processos, sistemas e/ou serviços inovadores obtidos a partir de pesquisas anteriores realizadas pela pequena empresa sem o apoio da FAPESP ou a partir de pesquisa apoiada no âmbito do PIPE."]
+  },
+  {
+    "tag": "pular_fase_1",
+    "patterns":["posso ir direto pra fase 2 sem fazer a 1","posso pular a fase1", "a fase 1 é obrigatória", "posso ir direto pra fase 2", "é possivel pular a fase 1", "tem como ir direto pra fase 2"],
+    "responses":["A empresa pode submeter uma proposta à Fase 2 Direta. Nesse caso é fundamental demonstrar que a viabilidade técnica da pesquisa já foi demonstrada; para tanto é fundamental apresentar um ótimo documento de “Justificativa para a Fase 2 Direta”."]
+  },
+  {
+    "tag": "projeto_de_pesquisa_feito_na_empresa",
+    "patterns":["o projeto de pesquisa pode ser feito na empresa","posso realizar o projeto em uma empresa","o projeto deve ser feito dentro de uma empresa ?"],
+    "responses":["Sim, obrigatoriamente. O PIPE destina-se a apoiar a execução de pesquisa EM pequenas empresas sediadas no Estado de São Paulo, conforme está explicitado nas normas do programa, você pode verificar no link a seguir: https://fapesp.br/pipe/normas/#1"]
+  },
+  {
+    "tag":"necessario_cnpj_para_solicitar_pipe",
+    "patterns":["preciso ter uma empresa pra solicitar PIPE","Preciso de um CNPJ para solicitar o pipe?", "é necessario abrir uma empresa antes de enviar um projeto pipe"],
+    "responses":["Não. A FAPESP analisa propostas de empresas ainda não constituídas. Empresas startup ainda não constituídas legalmente são incentivadas a submeter. Nos casos em que a proposta for recomendada, o proponente deverá então abrir formalmente a empresa antes da concessão da proposta."]
+  },
+  {
+    "tag":"empresa_para_fins_de_submissao_pipe",
+    "patterns":["o que é uma empresa para fins de submissão ao PIPE ?", "que tipo de empresa é necessária para submeter um pipe", "que tipos de empresa se encaixam para submissao PIPE", "quais empresas sao validas para submissao de um pipe"],
+    "responses":["É uma empresa com até 250 funcionários, independentemente do seu faturamento. A FAPESP considera empresa as sociedades empresárias previstas no Código Civil, o empresário individual, o microempreendedor individual (MEI), a sociedade limitada unipessoal e as sociedades simples. Associações, fundações, institutos e cooperativas não podem sediar um PIPE da FAPESP."]
+  },
+  {
+    "tag":"areas_prioritarias_pipe",
+    "patterns":["Há áreas prioritárias no programa PIPE ?","existe alguma area com mais prioridade no pipe", "quais areas tem prioridade no pipe"],
+    "responses":["Não existem áreas prioritárias. O PIPE visa a apoiar pesquisas promissoras, com potencial de inovação, em qualquer área do conhecimento."]
+  },
+  {
+    "tag":"produtos_prontos_no_pipe",
+    "patterns":["",],
+    "responses":["",]
+  },
+  {
+    "tag":,
+    "patterns":["",],
+    "responses":["",]
+  },
+  {
+    "tag":,
+    "patterns":["",],
+    "responses":["",]
+  },
+  {
+    "tag":,
+    "patterns":["",],
+    "responses":["",]
+  },
+  {
+    "tag":,
+    "patterns":["",],
+    "responses":["",]
+  },
+  {
+    "tag":,
+    "patterns":["",],
+    "responses":["",]
+  },
+  {
+    "tag":,
+    "patterns":["",],
+    "responses":["",]
+  },
+  {
+    "tag":,
+    "patterns":["",],
+    "responses":["",]
+  },
+
 ]
 }
