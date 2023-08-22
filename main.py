@@ -6,17 +6,17 @@ myChatBot = ChatBot()
 #criar o modelo
 myChatBot.createModel()
 
-print("Bem vindo ao Chatbot")
+print("Bem vindo ao Chatbot Fapesp meu nobre!")
 
 
-pergunta = input("como posso te ajudar?")
+pergunta = input("Meu nobre, como posso te ajudar?")
 resposta, intencao = myChatBot.chatbot_response(pergunta)
 print(resposta + "   ["+intencao[0]['intent']+"]")
 
 
 while (intencao[0]['intent']!="despedida"):
-    pergunta = input("posso lhe ajudar com algo a mais?")
+    pergunta = input("Meu nobre, posso lhe ajudar com algo a mais?")
     resposta, intencao = myChatBot.chatbot_response(pergunta)
     print(resposta + "   [" + intencao[0]['intent'] + "]")
 
-print("Foi um prazer atendê-lo")
+print("Foi um prazer atendê-lo meu nobre!")

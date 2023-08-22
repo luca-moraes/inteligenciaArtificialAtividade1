@@ -13,8 +13,13 @@
   },
   {
     "tag": "pipe",
-    "patterns": ["o que é pipe", "como fazer um pipe", "onde mandar o pipe"],
-    "responses": ["para saber mais sobre o pipe, entre no link: www.pipe.com"]
+    "patterns": ["o que é pipe", "o q é pipe", "me diga algo sobre o pipe", "me fale mais sobre pipe", "o que são projetos pipe", "sobre o pipe"],
+    "responses": ["O PIPE-FAPESP é um porjeto que apoia a execução de pesquisa científica e/ou tecnológica em micro, pequenas e médias empresas no Estado de São Paulo. A sigla PIPE significa pesquisa inovativa em pequenas empresas. Para saber mais sobre o pipe, entre no link: https://fapesp.br/pipe/"]
+  },
+  {
+    "tag": "objetivosPipe",
+    "patterns": ["quais sao os objetivos do pipe", "me fala sobre os objetivos do pipe", "objetivos do pipe", "diga os objetivos do pipe"],
+    "responses" : ["São objetivos do PIPE: \n1. Apoiar a pesquisa em ciência e tecnologia como instrumento para promover a inovação tecnológica, promover o desenvolvimento empresarial e aumentar a competitividade das pequenas empresas.\n2. Incrementar a contribuição da pesquisa para o desenvolvimento econômico e social.\n3. Induzir o aumento do investimento privado em pesquisa tecnológica.\n4. Possibilitar que as empresas se associem a pesquisadores do ambiente acadêmico em projetos de pesquisa visando à inovação tecnológica.\n5. Contribuir para a formação e o desenvolvimento de núcleos de desenvolvimento tecnológico nas empresas e para o emprego de pesquisadores no mercado.\n Saiba mais no link a seguir: https://fapesp.br/pipe/sobre/"]
   }
 ]
 }
